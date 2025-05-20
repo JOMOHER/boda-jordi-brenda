@@ -1,0 +1,170 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Encabezado y Hero */
+.hero {
+  background-color: #f5f3ed;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  background-image: url('/img/VistaBN.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-family: 'Alex Brush', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero .date {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #778f72;
+}
+
+section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Fotos */
+.foto-seccion {
+  margin-top: 40px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-seccion img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Detalles */
+.detalles {
+  background-color: #f5f3ed;
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #778f72;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #5e725a;
+}
+
+/* Contador */
+.contador-boda {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contador-item {
+  background-color: #778f72;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.contador-item .numero {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contador-item .texto {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero .date {
+    font-size: 1.4rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .contador-boda {
+    gap: 10px;
+  }
+  
+  .contador-item {
+    min-width: 80px;
+  }
+}
